@@ -1,1 +1,3 @@
-# About-SwiftUI
+# About SwiftUI
+### 예제를 통해 공부해보는 SwiftUI
+🗓 21.01.20 ~
