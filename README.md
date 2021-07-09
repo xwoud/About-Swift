@@ -4,4 +4,4 @@
 
 | 날짜  | 제목   | Code   | Readme   | 비고   |
 | ------------ | ------------ | ------------ | ------------ |------------ |
-| 21.07.07 | 애플워치에서 TableView 구현해보기 | [TableWatchApp](/TableWatchApp) | [🐶](/TableWatchApp/TableWatchApp.md)| WatchOS |
+| 21.07.07 | 애플워치에서 Table 구현해보기 | [TableWatchApp](/TableWatchApp) | [🐶](/TableWatchApp/TableWatchApp.md)| WatchOS |
