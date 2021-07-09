@@ -19,7 +19,7 @@
 		D276045B2698347300BB6F86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D276045A2698347300BB6F86 /* Preview Assets.xcassets */; };
 		D27604672698347300BB6F86 /* TableWatchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27604662698347300BB6F86 /* TableWatchAppTests.swift */; };
 		D27604722698347300BB6F86 /* TableWatchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27604712698347300BB6F86 /* TableWatchAppUITests.swift */; };
-		D2760489269834AB00BB6F86 /* listData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2760488269834AB00BB6F86 /* listData.swift */; };
+		D2760489269834AB00BB6F86 /* ListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2760488269834AB00BB6F86 /* ListData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +99,7 @@
 		D276046D2698347300BB6F86 /* TableWatchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableWatchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27604712698347300BB6F86 /* TableWatchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableWatchAppUITests.swift; sourceTree = "<group>"; };
 		D27604732698347300BB6F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2760488269834AB00BB6F86 /* listData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listData.swift; sourceTree = "<group>"; };
+		D2760488269834AB00BB6F86 /* ListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,7 @@
 		D27604872698349A00BB6F86 /* Struct */ = {
 			isa = PBXGroup;
 			children = (
-				D2760488269834AB00BB6F86 /* listData.swift */,
+				D2760488269834AB00BB6F86 /* ListData.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -397,7 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D27604522698347200BB6F86 /* NotificationController.swift in Sources */,
-				D2760489269834AB00BB6F86 /* listData.swift in Sources */,
+				D2760489269834AB00BB6F86 /* ListData.swift in Sources */,
 				D27604502698347200BB6F86 /* ContentView.swift in Sources */,
 				D27604562698347200BB6F86 /* ComplicationController.swift in Sources */,
 				D276044E2698347200BB6F86 /* TableWatchAppApp.swift in Sources */,
