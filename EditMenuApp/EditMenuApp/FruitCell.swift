@@ -2,7 +2,7 @@
 //  FruitCell.swift
 //  MenuItemApp
 //
-//  Created by Hailey on 2022/10/05.
+//  Created by Minnit on 2022/10/05.
 //
 
 import UIKit
