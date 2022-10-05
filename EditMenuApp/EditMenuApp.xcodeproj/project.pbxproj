@@ -13,10 +13,11 @@
 		D2CC660328ED4E8E0033EB97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CC660128ED4E8E0033EB97 /* Main.storyboard */; };
 		D2CC660528ED4E900033EB97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2CC660428ED4E900033EB97 /* Assets.xcassets */; };
 		D2CC660828ED4E900033EB97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2CC660628ED4E900033EB97 /* LaunchScreen.storyboard */; };
+		D2CC661028ED6CA90033EB97 /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2CC660F28ED6CA90033EB97 /* FruitCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D2CC65F828ED4E8E0033EB97 /* MenuItemApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuItemApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CC65F828ED4E8E0033EB97 /* EditMenuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EditMenuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2CC65FB28ED4E8E0033EB97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2CC65FD28ED4E8E0033EB97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D2CC65FF28ED4E8E0033EB97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		D2CC660428ED4E900033EB97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2CC660728ED4E900033EB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2CC660928ED4E900033EB97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2CC660F28ED6CA90033EB97 /* FruitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		D2CC65EF28ED4E8E0033EB97 = {
 			isa = PBXGroup;
 			children = (
-				D2CC65FA28ED4E8E0033EB97 /* MenuItemApp */,
+				D2CC65FA28ED4E8E0033EB97 /* EditMenuApp */,
 				D2CC65F928ED4E8E0033EB97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +50,12 @@
 		D2CC65F928ED4E8E0033EB97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2CC65F828ED4E8E0033EB97 /* MenuItemApp.app */,
+				D2CC65F828ED4E8E0033EB97 /* EditMenuApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2CC65FA28ED4E8E0033EB97 /* MenuItemApp */ = {
+		D2CC65FA28ED4E8E0033EB97 /* EditMenuApp */ = {
 			isa = PBXGroup;
 			children = (
 				D2CC65FB28ED4E8E0033EB97 /* AppDelegate.swift */,
@@ -63,16 +65,17 @@
 				D2CC660428ED4E900033EB97 /* Assets.xcassets */,
 				D2CC660628ED4E900033EB97 /* LaunchScreen.storyboard */,
 				D2CC660928ED4E900033EB97 /* Info.plist */,
+				D2CC660F28ED6CA90033EB97 /* FruitCell.swift */,
 			);
-			path = MenuItemApp;
+			path = EditMenuApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2CC65F728ED4E8E0033EB97 /* MenuItemApp */ = {
+		D2CC65F728ED4E8E0033EB97 /* EditMenuApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2CC660C28ED4E900033EB97 /* Build configuration list for PBXNativeTarget "MenuItemApp" */;
+			buildConfigurationList = D2CC660C28ED4E900033EB97 /* Build configuration list for PBXNativeTarget "EditMenuApp" */;
 			buildPhases = (
 				D2CC65F428ED4E8E0033EB97 /* Sources */,
 				D2CC65F528ED4E8E0033EB97 /* Frameworks */,
@@ -82,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = MenuItemApp;
+			name = EditMenuApp;
 			productName = MenuItemApp;
-			productReference = D2CC65F828ED4E8E0033EB97 /* MenuItemApp.app */;
+			productReference = D2CC65F828ED4E8E0033EB97 /* EditMenuApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D2CC65F328ED4E8E0033EB97 /* Build configuration list for PBXProject "MenuItemApp" */;
+			buildConfigurationList = D2CC65F328ED4E8E0033EB97 /* Build configuration list for PBXProject "EditMenuApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2CC65F728ED4E8E0033EB97 /* MenuItemApp */,
+				D2CC65F728ED4E8E0033EB97 /* EditMenuApp */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CC661028ED6CA90033EB97 /* FruitCell.swift in Sources */,
 				D2CC660028ED4E8E0033EB97 /* ViewController.swift in Sources */,
 				D2CC65FC28ED4E8E0033EB97 /* AppDelegate.swift in Sources */,
 				D2CC65FE28ED4E8E0033EB97 /* SceneDelegate.swift in Sources */,
@@ -289,7 +293,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DUQE66MABG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MenuItemApp/Info.plist;
+				INFOPLIST_FILE = EditMenuApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -300,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.minnit.MenuItemApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minnit.EditMenuApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -317,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DUQE66MABG;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MenuItemApp/Info.plist;
+				INFOPLIST_FILE = EditMenuApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -328,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.minnit.MenuItemApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.minnit.EditMenuApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -339,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2CC65F328ED4E8E0033EB97 /* Build configuration list for PBXProject "MenuItemApp" */ = {
+		D2CC65F328ED4E8E0033EB97 /* Build configuration list for PBXProject "EditMenuApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2CC660A28ED4E900033EB97 /* Debug */,
@@ -348,7 +352,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2CC660C28ED4E900033EB97 /* Build configuration list for PBXNativeTarget "MenuItemApp" */ = {
+		D2CC660C28ED4E900033EB97 /* Build configuration list for PBXNativeTarget "EditMenuApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2CC660D28ED4E900033EB97 /* Debug */,
