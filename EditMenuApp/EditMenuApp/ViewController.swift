@@ -10,20 +10,33 @@ import UIKit
 class ViewController: UIViewController {
     
     // MARK: Properties
-    let fruitArrays: [String] = ["사과", "배", "포도", "복숭아", "파인애플", "망고"]
-    lazy var fruitTableView: UITableView = {
+    private let fruitArrays: [String] = ["사과", "배", "포도", "복숭아", "파인애플", "망고"]
+    private lazy var fruitTableView: UITableView = {
         let tableView = UITableView()
         tableView.backgroundColor = .white
         tableView.register(FruitCell.self,
                            forCellReuseIdentifier: FruitCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
 
     // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableViewLayout()
+    }
+    
+    // MARK: Layout
+    private func setupTableViewLayout() {
+        view.addSubview(fruitTableView)
+        NSLayoutConstraint.activate([
+            fruitTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 15),
+            fruitTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            fruitTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            fruitTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
     }
 }
 
@@ -31,6 +44,10 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fruitArrays.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
