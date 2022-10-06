@@ -55,7 +55,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         cell.selectionStyle = .none
-        cell.textLabel?.text = fruitArrays[indexPath.row]
+        cell.setupFruitName(name: fruitArrays[indexPath.row])
         return cell
     }
 }

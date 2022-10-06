@@ -11,6 +11,11 @@ class FruitCell: UITableViewCell {
     
     // MARK: Property
     static let identifier = "FruitCell"
+    var fruitName: String = "과일이름"
+    private let customMenuItems: [UIMenuItem] = [
+        UIMenuItem(title: "샤인머스캣", action: #selector(changeShineMuscat)),
+        UIMenuItem(title: "되돌리기", action: #selector(returnFruitName))
+    ]
 
     // MARK: Override Function
     override func awakeFromNib() {
@@ -28,8 +33,8 @@ class FruitCell: UITableViewCell {
     }
     
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        // 지정된 Action을 활성화 / 비활성화 하게 만들기
-        return action == #selector(cut(_:)) || action == #selector(copy(_:))
+        // Custom Action 만 활성화
+        return action == #selector(changeShineMuscat) || action == #selector(returnFruitName)
     }
 
     override var canBecomeFirstResponder: Bool {
@@ -37,6 +42,11 @@ class FruitCell: UITableViewCell {
         return true
     }
 
+    func setupFruitName(name: String) {
+        textLabel?.text = name
+        fruitName = name
+    }
+    
     // MARK: Edit Menu Action Function
     private func setupLongGesture() {
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture(recognizer:)))
@@ -53,6 +63,7 @@ class FruitCell: UITableViewCell {
         
         let menuController = UIMenuController.shared
         menuController.arrowDirection = .default // 화살표 방향 default 값이 .default
+        menuController.menuItems = customMenuItems
         menuController.showMenu(from: recognizerSuperview, rect: recognizerView.frame) // edit menu를 보여 줄 영역 잡기
         NotificationCenter.default.addObserver(self, selector: #selector(willHideEditMenu), name: UIMenuController.willHideMenuNotification, object: nil)
         // Edit Menu 팝업이 닫힐 때를 알기 위해 observer를 생성
@@ -63,5 +74,15 @@ class FruitCell: UITableViewCell {
         // Edit Menu 팝업이 닫힐 때
         backgroundColor = .clear
         NotificationCenter.default.removeObserver(self, name: UIMenuController.willHideMenuNotification, object: nil)
+    }
+    
+    @objc private func changeShineMuscat() {
+        // "샤인머스캣" Item의 기능
+        textLabel?.text = "샤인머스캣"
+    }
+
+    @objc private func returnFruitName() {
+        // "되돌리기" Item의 기능
+        textLabel?.text = fruitName
     }
 }
