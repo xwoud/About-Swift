@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         let tableView = UITableView()
         tableView.backgroundColor = .white
         tableView.register(FruitCell.self,
-                           forCellReuseIdentifier: FruitCell.identifier)
+                           forCellReuseIdentifier: "FruitCell")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -54,8 +54,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: FruitCell.identifier) as? FruitCell else {
             return UITableViewCell()
         }
+        cell.selectionStyle = .none
         cell.textLabel?.text = fruitArrays[indexPath.row]
         return cell
     }
 }
-
