@@ -29,7 +29,7 @@ class FruitCell: UITableViewCell {
     
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         // 지정된 Action을 활성화 / 비활성화 하게 만들기
-        return true
+        return action == #selector(cut(_:)) || action == #selector(copy(_:))
     }
 
     override var canBecomeFirstResponder: Bool {
